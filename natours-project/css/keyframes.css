@@ -1,0 +1,35 @@
+/**
+ * Keyframes
+ */
+
+@keyframes moveInLeftMainText {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px) rotate(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(360deg);
+  }
+}
+
+@keyframes moveInRightSubText {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

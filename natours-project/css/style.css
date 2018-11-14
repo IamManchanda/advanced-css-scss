@@ -43,6 +43,7 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  backface-visibility: hidden;
 }
 
 .text-box {
@@ -61,10 +62,12 @@ body {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
+  animation: moveInLeftMainText 2s ease-out;
 }
 
 .heading-primary-sub {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 17.625px;
+  animation: moveInRightSubText 3s ease-in;
 }
