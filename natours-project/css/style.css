@@ -44,6 +44,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
+  margin-bottom: 48px;
 }
 
 .text-box {
@@ -51,6 +52,7 @@ body {
   top: 37.5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .heading-primary-main,
@@ -70,4 +72,58 @@ body {
   font-weight: 700;
   letter-spacing: 17.625px;
   animation: moveInRightSubText 3s ease-in;
+}
+
+.button,
+.button:link,
+.button:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 5000px;
+  transition: all .2s;
+  position: relative;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.button-white {
+  background-color: #fff;
+  color: #777;
+}
+
+.button-white::after {
+  background-color: #fff;
+}
+
+.button-animated {
+  animation: moveInBottomButton 0.5s ease-in-out 2.5s; 
+  animation-fill-mode: backwards;
 }
